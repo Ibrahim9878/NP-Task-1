@@ -1,0 +1,89 @@
+OSI vs TCP/IP evvelce deyekki bu iki model her ikisi melumat oturulmesini temin edir.Sadece Tcp/ip modeli osi - in daha kompakt bir formasidirki Osi -da ayrica 3 yere bolunmus layerler Tcp/ip de yigcam sekilde verilmisdir indi onlar arasindaki ferqlerden ve butun layerlerin ne is gorduyunden danisaq.
+OSI
+Pyshcial Layer => Elektrik, mexaniki və ya prosedur interfeyslərindən istifadə edərək məlumatları kocururr. Ve bu prosese hec kim qarisa bilmez fiziki layer i idare ede bilmirik.
+· Physical struktur
+· Coax, Fiber, Wireless, Hubs, Repeaters
+
+Data Link Layer => Bitlerle oturme zamani cixan problemleri ele alir.
+· Frames
+· Ethernet, PPP, Switch, Bridge
+
+Network Layer => melumatlari diger sebekelere oturulmesi network vasitesile olur.
+· Packets
+· IP, ICMP, IPSec, IGMP
+
+Transport Layer => Sirf melumatlarin oturulmesi bu hissede alinir ki bu da iki yere bolunur TCP UDP iki yere bolunur demekdense 2 yolu var demek daha meqsede uygundu.Ferqleri nelerdir Tcp bir nece melumati oturdukden sonra respond gozleyirki diger melumatlari otursun yox respond gelmese yeniden gonderir.Udp ise elece melumatlari gonderir cavab gozlemeden bu daha suretlidir gordunduyu kimi canli yayinlar da fln istifade edilir.Bu ikisininde istifade edilidiyi yerler var meselen teams program kimi programlar ki hem ekran paylasimi Udp dir.Chat hissesine ise Tcp demek olar.
+· End-to-end connections
+· TCP, UDP
+
+Session layer => Programlar arasi dialogu temin edir ve sonlandirir.
+· Syntax layer
+· SSL, SSH, IMAP, FTP, MPEG, JPEG
+
+
+PresentationLayer => Tətbiqin qəbul etdiyi semantika və ya sintaksisə uyğun olaraq proqram təbəqəsi üçün məlumatları tərcümə edir və ya formatlaşdırır.
+· Synch & send to port
+· API's, Sockets, WinSock
+
+Application Layer => O, istifadəçiyə mesajları oxumaq, faylları ötürmək və ya şəbəkə ilə bağlı digər fəaliyyətləri yerinə yetirmək istədikdə proqram və ya insana proqram və ya şəbəkə ilə qarşılıqlı əlaqə yaratmağa imkan verir.Bunun ucun portlardan istifade edir.
+· End User layer
+· HTTP, FTP, IRC, SSH, DNS
+
+Bunlar OSI modelinin Layerleri idi ki bunlarin qarsiliglari tcp de bir balaca ferqlidir.
+Application, Session , Presentation  => Aplication 
+Transport                            => Transport
+Network                              => Internet
+Pyschial, Data link                  => Network Acces Layer
+
+Indi yuxarida dediyim port sohbetinden danisaq.
+Port nedir? ne ise yarayir?
+Ilk olaraq loru dilde port bir cihazin kommputerin xarici dunya ile elaqe yaratmagina komek edir deye bilerik.Ferqli meqsedler ucun istifade olunan portlar vardir.
+
+FTP (File Transfer Protocol)
+
+Port Nömrəsi: 21 (Komandalar üçün), 20 (Data transferi üçün)
+Açıqlama: Fayl köçürmə üçün istifadə olunan protokoldur. Adətən iki fərqli portdan istifadə olunur, biri komandalar üçün (21), digəri isə data transferi üçün (20).
+
+SMTP (Simple Mail Transfer Protocol)
+
+Port Nömrəsi: 25 (Standart), 587 (Təhlükəsiz bağlantı üçün)
+Açıqlama: E-poçt göndərmək üçün istifadə olunan protokoldur.
+
+POP3 (Post Office Protocol version 3)
+
+Port Nömrəsi: 110 (Standart), 995 (Təhlükəsiz bağlantı üçün)
+Açıqlama: E-poçtları serverdən lokal cihazınıza endirmək üçün istifadə olunur.
+
+IMAP (Internet Message Access Protocol)
+
+Port Nömrəsi: 143 (Standart), 993 (Təhlükəsiz bağlantı üçün)
+Açıqlama: E-poçtları serverdə saxlayaraq oxumağa və idarə etməyə imkan verən protokoldur.
+
+HTTP (Hypertext Transfer Protocol)
+
+Port Nömrəsi: 80
+Açıqlama: Veb səhifələrini internetdə göstərmək üçün istifadə olunan standart protokoldur.
+
+HTTPS (Hypertext Transfer Protocol Secure)
+
+Port Nömrəsi: 443
+Açıqlama: HTTP-nin təhlükəsiz versiyasıdır və SSL/TLS ilə şifrələnir.
+
+RDP (Remote Desktop Protocol)
+
+Port Nömrəsi: 3389
+Açıqlama: Uzaq masaüstü bağlantısı yaratmaq üçün istifadə olunan protokoldur, məsafədən kompüterlərə qoşulmağa imkan verir.
+Bu portlar hər bir protokolun düzgün şəkildə işləməsini təmin edir və standart olaraq təyin edilmişdir.
+
+
+
+
+
+
+
+
+
+
+
+
+
